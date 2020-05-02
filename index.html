@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Online Quiz App</title>
+</head>
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <span class="navbar-brand mb-0 h1">TRIL Fellowship Quiz</span>
+        </div>
+      </nav>
+      <div class="container mt-5">
+        <div class="row">
+            <form id="questions" name="questions" method="POST" data-netlify="true">
+                <div class="form-group">
+                    <h3 class="text-center mb-3">Please Enter your Name below</h3>
+                    <input
+                    type="text"
+                    id="name-text"
+                    class="form-control bg-dark text-white"
+                    placeholder="Enter your name (10 chars max)"
+                    maxlength="10"
+                    required />
+                </div>
+                <h3 class="text-left mb-3 mt-5">Questions:</h3>
+
+                <div class="form-group">
+                    <span class="text-left mt-3">
+                        1. King David's City?
+                    </span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="first" id="firstRadios1" value="option1">
+                        <label class="form-check-label" for="firstRadios1">
+                          Hebron
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="first" id="firstRadios2" value="option2">
+                        <label class="form-check-label" for="firstRadios2">
+                          Judah
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="first" id="firstRadios3" value="option3">
+                        <label class="form-check-label" for="firstRadios3">
+                          Israel
+                        </label>
+                      </div>
+                </div>
+                
+                <div class="form-group">
+                    <span class="text-left mt-3">
+                        2. King David's City?
+                    </span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="second" id="secondRadios1" value="option1">
+                        <label class="form-check-label" for="secondRadios1">
+                          Hebron
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="second" id="secondRadios2" value="option2">
+                        <label class="form-check-label" for="secondRadios2">
+                          Judah
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="second" id="secondRadios3" value="option3">
+                        <label class="form-check-label" for="secondRadios3">
+                          Israel
+                        </label>
+                      </div>
+                </div>
+
+
+                <div class="form-group">
+                    <span class="text-left mt-3">
+                        3. King David's City?
+                    </span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="third" id="thirdRadios1" value="option1">
+                        <label class="form-check-label" for="firstRadios1">
+                          Hebron
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="third" id="thirdRadios2" value="option2">
+                        <label class="form-check-label" for="secondRadios2">
+                          Judah
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="third" id="thirdRadios3" value="option3">
+                        <label class="form-check-label" for="thirdRadios3">
+                          Israel
+                        </label>
+                      </div>
+                </div>
+
+
+                <div class="form-group">
+                    <span class="text-left mt-3">
+                        4. King David's City?
+                    </span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="fourth" id="fourthRadios1" value="option1">
+                        <label class="form-check-label" for="fourthRadios1">
+                          Hebron
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="fourth" id="fourthRadios2" value="option2">
+                        <label class="form-check-label" for="fourthRadios2">
+                          Judah
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="fourth" id="fourthRadios3" value="option3">
+                        <label class="form-check-label" for="fourthRadios3">
+                          Israel
+                        </label>
+                      </div>
+                </div>
+
+
+                <div class="form-group">
+                    <span class="text-left mt-3">
+                        5. King David's City?
+                    </span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="fifth" id="fifthRadios1" value="option1">
+                        <label class="form-check-label" for="fifthRadios1">
+                          Hebron
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="fifth" id="fifthRadios2" value="option2">
+                        <label class="form-check-label" for="fifthRadios2">
+                          Judah
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="fifth" id="fifthRadios3" value="option3">
+                        <label class="form-check-label" for="fifthRadios3">
+                          Israel
+                        </label>
+                      </div>
+                </div> 
+                <button type="submit" id="form-submit" class="btn btn-primary text-center  btn-block mb-3 mt-3">
+                  Submit
+                </button>
+            </form>
+
+           
+        </div>
+      </div>
+
+      <script>
+
+        document.querySelector("#name-text").focus();
+          // document.querySelector("#form-submit").addEventListener('click', function() {
+          //     document.querySelector("#questions").submit();
+          // })
+      </script>
+</body>
+</html>
